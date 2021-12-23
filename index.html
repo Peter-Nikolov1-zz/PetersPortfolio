@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CodePen Credit to s1mpson on CodePen-->
+    <link href="https://codepen.io/s1mpson/pen/MWKYMEe">
+    <!--Logos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> />
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@1,100&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <title>Peter's Portfolio</title>
+</head>
+
+<body class="bg-image" style="background-image: url(EarthImage.jpg); height: 100vh; background-repeat: no-repeat; background-size: cover;">
+
+    <!--Header-->
+    <div class="name-container">
+        <div class="nameheader">
+            <h1 class="name">Peter Nikolov</h1>
+            <h5 class="name">Software Developer</h5>
+        </div>
+    </div>
+
+    <!--Buttons-->
+    <div class="modalButtons">
+        <div class="buttonContainer">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          About
+        </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+        Contact
+      </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">
+        Projects
+      </button>
+        </div>
+    </div>
+
+    <!--About Modal-->
+    <div class="aboutModal">
+        <div class="modal fade" id="myModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="aboutContent">
+                    <div class="modal-content" style="background-image: url(Images/PillarsOfCreation.jpg);">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="aboutModal">About Myself!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> </div>
+                        <div class="modal-body">
+                            <img src="Images/Myself.JPG" id="myselfImage">
+                            <div id="aboutText">
+                                <p>I've always been interested in all things technology for as long as I can remember. Whether that's playing video games, learning how something works or fixing literally anything technology related for my technology illiterate
+                                    mother; I've always loved it! As I'm sure you can tell, I also love everything about space.</p>
+
+                                <p>Enrolling at Eleven Fifty Academy has opened so many potential opportunities to access my creative side that I could never access before. I may be new to coding, but man, I am <em>SO</em> excited to see where I end up and
+                                    what I can offer to anyone willing to give me a shot.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">C'ya!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="contactModal">
+        <div class="modal fade" id="myModal2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModal2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bigModal" style="background-image: url(Images/HubbleDeepField.jpg);">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModal">Let's Talk!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Formspree-->
+                    <div class="form-modal-body">
+                        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdobngdo" method="post">
+                            <div class="input-container">
+                                <fieldset id="fs-frm-inputs">
+                                    <div id="fullnameLabel">
+                                        <label for="full-name">Full Name</label>
+                                    </div>
+                                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                                    <div id="emailaddressLabel">
+                                        <label for="email-address">Email Address</label>
+                                    </div>
+                                    <input type="email" name="_replyto" id="email-address" placeholder="example@domain.tld" required="">
+                                    <div id="messageLabel">
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <textarea rows="5" name="message" id="message" placeholder="Wanna offer me a job?" required=""></textarea>
+                                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                                </fieldset>
+                            </div>
+                            <input type="submit" id="submitBtn" value="Submit">
+                        </form>
+                    </div>
+                    <!--Footer-->
+                    <div class="contact-modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bye!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects Modal-->
+    <div class="projectModal">
+        <div class="modal fade" id="myModal3" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myModal3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered-scrollable">
+                <div class="modal-content" style="background-image: url(Images/Stars.jpg);">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectsModal">My Work!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="projects-body">
+                            <div class="codepen-card">
+                                <img src="/Images/Kirby_CodePen.png" class="card-img-top" alt="Kirby">
+                                <div class="card-body-kirby">
+                                    <h5 class="card-title-kirby">Kirby CodePen!</h5>
+                                    <a href="https://codepen.io/PeterNikolov/pen/wvePEQN" class="btn btn-primary-kirby">CodePen</a>
+                                </div>
+                            </div>
+                            <div class="elevennote-card">
+                                <img src="/Images/ElevenNoteAPI.png" class="card-img-top" alt="ElevenNote">
+                                <div class="card-body-elevennote">
+                                    <h5 class="card-title-elevennote">ElevenNote API!</h5>
+                                    <a href="https://github.com/Peter-Nikolov1/ElevenNote" class="btn btn-primary-elevennote">ElevenNote Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sayonara </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="mainFooter">
+        <footer class="bg-transparent text-center text-white fixed-bottom">
+            <div class="containerFooter">
+                <section class="mb-4">
+                    <a class="btn btn-floating m-1" href="https://www.linkedin.com/in/peternikolov94/" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+
+                    <a class="btn btn-floating m-1" href="https://github.com/Peter-Nikolov1" role="button"><i
+              class="fab fa-github"></i></a>
+
+                    <a class="btn btn-floating m-1" href="https://codepen.io/PeterNikolov" role="button"><i
+              class="fab fa-codepen"></i></a>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+<script src="main.js"></script>
+
+</html>

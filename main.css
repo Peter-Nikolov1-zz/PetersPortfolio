@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+}
+
+h1,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Name */
+
+.name-container {
+    margin: auto;
+    padding: 50px;
+}
+
+.nameheader {
+    text-align: center;
+    color: gray;
+}
+
+
+/* Modal Buttons*/
+
+.modalButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.btn-primary {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-color: transparent;
+    width: 150px;
+}
+
+.btn-primary:hover {
+    background-color: gray;
+    border-color: black;
+}
+
+.btn-primary:focus {
+    background-color: black;
+}
+
+.btn-primary:visited {
+    border-color: black;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    border-color: black !important;
+    box-shadow: 0 0 0 0 rgb(0 0 0) !important;
+}
+
+
+/* Modal Titles */
+
+#myModal {
+    color: white;
+}
+
+#myModal2 {
+    color: white;
+}
+
+#myModal3 {
+    color: white;
+}
+
+
+/* Project Buttons*/
+
+.btn-primary-kirby {
+    background-color: black;
+    color: white;
+}
+
+.btn-primary-kirby:hover {
+    color: pink;
+}
+
+.btn-primary-elevennote {
+    background-color: black;
+    color: white;
+}
+
+.btn-primary-elevennote:hover {
+    color: gray;
+}
+
+
+/* About Modal */
+
+.btn-close {
+    background-color: gray;
+}
+
+#myselfImage {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutText {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+
+/* Contact Modal */
+
+.input-container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 340px;
+    width: 400px;
+}
+
+.label {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+}
+
+#full-name {
+    background-color: darkgray;
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
+
+#full-name::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+#fullnameLabel {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+#email-address {
+    background-color: darkgray;
+    color: black;
+    font-weight: bold;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#email-address::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+#emailaddressLabel {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#messageLabel {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+#message {
+    background-color: darkgray;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#message::placeholder {
+    color: black;
+}
+
+#email-address {
+    text-align: center;
+}
+
+#fs-frm-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+#fs-frm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: black;
+    align-items: center;
+}
+
+.contact-modal-footer {
+    padding: 10px;
+    align-content: center;
+}
+
+#submitBtn {
+    color: white;
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background-color: gray;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    font-family: 'Montserrat', sans-serif;
+    align-content: center;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bigModal {
+    height: 520px;
+    width: auto;
+}
+
+
+/* Projects Modal*/
+
+.codepen-card {
+    width: 463px;
+}
+
+.card-body-kirby {
+    width: 286;
+    padding: 10px;
+}
+
+.card-title-kirby {
+    text-align: center;
+}
+
+.elevennote-card {
+    width: 463px;
+}
+
+.card-body-elevennote {
+    width: 286;
+    padding: 10px;
+}
+
+.card-title-elevennote {
+    text-align: center;
+}
+
+
+/* Footer */
+
+.mainFooter,
+.mb-4 {
+    position: relative;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.containerFooter {
+    height: 55;
+}
+
+.fab {
+    position: relative;
+    font-size: 55px;
+    top: 0;
+    color: gray;
+    transition: top ease 0.4s;
+}
+
+.fab:hover {
+    color: rgba(0, 255, 255, 0.685);
+    top: -10px;
+}

@@ -318,3 +318,16 @@ input[type=submit] {
     color: rgba(0, 255, 255, 0.685);
     top: -10px;
 }
+
+.fas {
+    position: relative;
+    font-size: 55px;
+    top: 0;
+    color: gray;
+    transition: top ease 0.4s;
+}
+
+.fas:hover {
+    color: rgba(0, 255, 255, 0.685);
+    top: -10px;
+}

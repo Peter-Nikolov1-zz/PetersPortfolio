@@ -236,7 +236,11 @@ h5 {
     color: white;
     background-color: gray;
     font-family: 'Montserrat', sans-serif;
-    margin: 10px;
+    margin: 12px;
+}
+
+#submitBt:hover {
+    color: greenyellow;
 }
 
 input[type=submit] {
@@ -255,6 +259,10 @@ input[type=submit] {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+}
+
+.btn-secondary:hover {
+    background-color: gray;
 }
 
 .bigModal {

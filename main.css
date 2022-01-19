@@ -14,42 +14,71 @@ h5 {
     font-weight: bold;
 }
 
+.bg-image {
+    z-index: -1;
+}
+
 
 /* Name */
 
 .name-container {
+    position: relative;
     margin: auto;
-    padding: 50px;
+    padding: 10px;
+    width: 500px;
+    height: 130px;
+    justify-content: center;
+    z-index: 2;
+}
+
+#firstname,
+#lastname {
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    z-index: 2;
 }
 
 .nameheader {
     text-align: center;
-    color: gray;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    opacity: 35%;
+    width: 500px;
+    z-index: 2;
 }
 
 
 /* Modal Buttons*/
 
 .modalButtons {
+    margin: auto;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .buttonContainer {
+    margin: auto;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    z-index: 2;
 }
 
 .btn-primary {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     justify-content: space-evenly;
     display: flex;
-    justify-content: center;
     background-color: black;
     color: white;
     border-color: transparent;
-    width: 150px;
+    width: 130px;
+    z-index: 2;
 }
 
 .btn-primary:hover {
@@ -349,16 +378,21 @@ input[type=submit] {
 
 /* Footer */
 
-.mainFooter,
-.mb-4 {
-    position: relative;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
+.containerFooter {
+    margin: auto;
+    height: 100px;
+    width: 670px;
 }
 
-.containerFooter {
-    height: 55;
+.bg-transparent.text-center.text-white.fixed-bottom {
+    color: red;
+}
+
+.mb-4 {
+    align-content: center;
+    margin: auto;
+    height: 70px;
+    width: 50%;
 }
 
 .fab {

@@ -106,5 +106,5 @@ particlesJS("particles-js", {
             }
         }
     },
-    "retina_detect": true
+    "retina_detect": false
 });

@@ -65,14 +65,13 @@ canvas {
 /* Modal Buttons*/
 
 .modalButtons {
+    position: relative;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
 .buttonContainer {
-    position: relative;
-    z-index: 3;
     margin: auto;
     padding: 10px;
     display: flex;

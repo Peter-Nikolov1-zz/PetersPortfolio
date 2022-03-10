@@ -41,7 +41,6 @@
  
  .buttonContainer {
      margin: auto;
-     padding: 10px;
      display: flex;
      justify-content: space-evenly;
      width: 50%;
@@ -123,8 +122,6 @@
      display: flex;
      background-color: transparent;
      border-color: transparent;
-     height: 50px;
-     width: 130px;
  }
  
  .btn-primary:hover {
@@ -208,7 +205,8 @@
  /* About Modal */
  
  .btn-close {
-     background-color: gray;
+     background-color: white;
+     padding: 0;
  }
  
  .btn-check:focus,
@@ -236,8 +234,6 @@
  .input-container {
      font-family: 'Montserrat', sans-serif;
      display: flex;
-     height: 340px;
-     width: 400px;
  }
  
  .label {
@@ -302,9 +298,9 @@
  
  #message {
      background-color: darkgray;
-     color: black;
      font-weight: bold;
      padding: 10px;
+     width: auto;
  }
  
  #message::placeholder {
@@ -330,20 +326,16 @@
      align-items: center;
  }
  
- .contact-modal-footer {
-     padding: 10px;
-     align-content: center;
- }
- 
  #submitBtn {
      color: white;
-     background-color: gray;
+     background-color: black;
      font-family: 'Montserrat', sans-serif;
      margin: 12px;
  }
  
  #submitBtn:hover {
      color: white;
+     background-color: gray;
  }
  
  input[type=submit] {
@@ -369,7 +361,7 @@
  }
  
  .bigModal {
-     height: 520px;
+     height: auto;
      width: auto;
  }
  /* Projects Modal*/

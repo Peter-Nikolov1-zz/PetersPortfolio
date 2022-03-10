@@ -13,16 +13,12 @@
      margin: 0;
      height: 100vh;
  }
- 
- b {
-     font-weight: bold;
- }
  /* ---- particles.js container ---- */
  
  #particles-js {
      position: absolute;
      background: black;
-     width: 100%;
+     width: 100vw;
      height: 100vh;
      z-index: -1;
  }
@@ -31,24 +27,15 @@
  .name-container {
      margin: auto;
      padding: 10px;
-     width: 500px;
-     height: 130px;
-     justify-content: center;
+     text-align: center;
  }
  
  #firstname,
  #lastname {
      margin: auto;
      padding: 10px;
-     width: 300px;
- }
- 
- .nameheader {
-     text-align: center;
-     justify-content: center;
-     flex-direction: column;
+     width: auto;
      color: white;
-     width: 500px;
  }
  /* Modal Buttons*/
  
@@ -440,14 +427,9 @@
  }
  /* Footer */
  
- .footerContainer {
-     margin: auto;
-     height: 100px;
-     top: 65%;
-     right: -200px;
-     width: 670px;
-     position: relative;
-     z-index: -1;
+ .mb-4 {
+     margin: 0 auto;
+     text-align: center;
  }
  
  .fab {

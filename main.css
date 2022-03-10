@@ -13,6 +13,10 @@
      margin: 0;
      height: 100vh;
  }
+ 
+ b {
+     font-weight: bold;
+ }
  /* ---- particles.js container ---- */
  
  #particles-js {
@@ -175,6 +179,15 @@
  }
  
  .btn-primary-sbm:hover {
+     color: gray;
+ }
+ 
+ .btn-secondary-sbm {
+     background-color: black;
+     color: white;
+ }
+ 
+ .btn-secondary-sbm:hover {
      color: gray;
  }
  
